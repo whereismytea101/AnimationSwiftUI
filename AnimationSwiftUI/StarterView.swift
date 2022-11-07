@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct StarterView: View {
+    @State var isAnimated = false
     
     var body: some View {
+
         TabView {
             MainView()
                 .tabItem {
@@ -22,19 +24,19 @@ struct StarterView: View {
                     Image(systemName: "eyes")
                     Text("Sharingan")
                 }
-            
-            secondSharinganView()
-                .tabItem {
-                    Image(systemName: "eye")
-                    Text("Awards")
-                }
+
+                secondSharinganView()
+                    .tabItem {
+                        Image(systemName: "eye")
+                        Text("Mangekyou")
+                    }
         }
-        .padding()
+    }
+    
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            StarterView()
+        }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        StarterView()
-    }
-}
