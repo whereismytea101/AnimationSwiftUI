@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct blablaExample: View {
-    @State private var start = false
+    @State private var iaAnimated = false
     
     var body: some View {
         HStack {
             VStack(spacing: 10){
 
-                CartView(
-                    start: $start,
-                    cartTitle: "InterpolationSpring",
+                EyeView(
+                    isAnimated: $iaAnimated,
+                    eyeTitle: "InterpolationSpring",
                     color: .brown,
                     animation: .interpolatingSpring(
                         mass: 1,
@@ -26,9 +26,9 @@ struct blablaExample: View {
                     )
                     .delay(0.2)
                 )
-                CartView(
-                    start: $start,
-                    cartTitle: "Spring",
+                EyeView(
+                    isAnimated: $iaAnimated,
+                    eyeTitle: "Spring",
                     color: .orange,
                     animation: .spring(
                         response: 0.55,
@@ -41,7 +41,7 @@ struct blablaExample: View {
             Spacer()
         }
         .onTapGesture {
-            start.toggle()
+            iaAnimated.toggle()
         }
     }
 }
@@ -54,10 +54,10 @@ struct blablaExample_Previews: PreviewProvider {
 }
 
 
-struct CartView: View {
-    @Binding var start: Bool
+struct EyeView: View {
+    @Binding var isAnimated: Bool
     
-    let cartTitle: String
+    let eyeTitle: String
     let color: Color
     let animation: Animation
     
@@ -67,9 +67,9 @@ struct CartView: View {
                 .resizable()
                 .frame(width: 200, height: 200)
                 .foregroundColor(color)
-                .offset(x: start ? UIScreen.main.bounds.width - 200 : 0)
-                .animation(animation, value: start)
-            Text(cartTitle)
+                .offset(x: isAnimated ? UIScreen.main.bounds.width - 200 : 0)
+                .animation(animation, value: isAnimated)
+            Text(eyeTitle)
         }
     }
 }

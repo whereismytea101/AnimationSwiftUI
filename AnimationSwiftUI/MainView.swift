@@ -17,12 +17,13 @@ struct MainView: View {
             AnimatedBackground()
                 .ignoresSafeArea()
             VStack {
+                Spacer()
                 Button(action: buttonAction) {
                     HStack {
-                        Text(awardIsShowing ? "Hide Award" : "Show Award")
-                        Spacer()
                         Image(systemName: "eye")
-                            .scaleEffect(awardIsShowing ? 2 : 1)
+                            .buttonBorderShape(.roundedRectangle(radius: 200))
+                            .foregroundColor(.black)
+                            .scaleEffect(awardIsShowing ? 4 : 3)
                             .rotationEffect(.degrees(awardIsShowing ? 180 : -180))
                             .onAppear() {
                                 withAnimation(Animation.easeInOut(duration: 1))
