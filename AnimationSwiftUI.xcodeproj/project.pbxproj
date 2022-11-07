@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		9B70287D2915466E00A51B91 /* AnimationSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B70287C2915466E00A51B91 /* AnimationSwiftUIApp.swift */; };
-		9B70287F2915466E00A51B91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B70287E2915466E00A51B91 /* ContentView.swift */; };
+		9B70287F2915466E00A51B91 /* StarterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B70287E2915466E00A51B91 /* StarterView.swift */; };
 		9B7028812915467200A51B91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B7028802915467200A51B91 /* Assets.xcassets */; };
 		9B7028842915467200A51B91 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B7028832915467200A51B91 /* Preview Assets.xcassets */; };
+		9B7028912915492000A51B91 /* SharinganView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7028902915492000A51B91 /* SharinganView.swift */; };
+		9B7028952915494800A51B91 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7028942915494800A51B91 /* MainView.swift */; };
+		9B7028972916827500A51B91 /* secondSharinganView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7028962916827500A51B91 /* secondSharinganView.swift */; };
+		9B70289929168B9400A51B91 /* ItachiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B70289829168B9400A51B91 /* ItachiView.swift */; };
+		9B7028B72917CF7100A51B91 /* AnimatedBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7028B62917CF7100A51B91 /* AnimatedBackground.swift */; };
+		9BA1B4812918FB8E0039529F /* GreetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA1B4802918FB8E0039529F /* GreetingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9B7028792915466E00A51B91 /* AnimationSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B70287C2915466E00A51B91 /* AnimationSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationSwiftUIApp.swift; sourceTree = "<group>"; };
-		9B70287E2915466E00A51B91 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9B70287E2915466E00A51B91 /* StarterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterView.swift; sourceTree = "<group>"; };
 		9B7028802915467200A51B91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B7028832915467200A51B91 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9B7028902915492000A51B91 /* SharinganView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharinganView.swift; sourceTree = "<group>"; };
+		9B7028942915494800A51B91 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		9B7028962916827500A51B91 /* secondSharinganView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondSharinganView.swift; sourceTree = "<group>"; };
+		9B70289829168B9400A51B91 /* ItachiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItachiView.swift; sourceTree = "<group>"; };
+		9B7028B62917CF7100A51B91 /* AnimatedBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedBackground.swift; sourceTree = "<group>"; };
+		9BA1B4802918FB8E0039529F /* GreetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +64,13 @@
 			isa = PBXGroup;
 			children = (
 				9B70287C2915466E00A51B91 /* AnimationSwiftUIApp.swift */,
-				9B70287E2915466E00A51B91 /* ContentView.swift */,
+				9B70287E2915466E00A51B91 /* StarterView.swift */,
+				9B7028942915494800A51B91 /* MainView.swift */,
+				9B7028902915492000A51B91 /* SharinganView.swift */,
+				9B7028962916827500A51B91 /* secondSharinganView.swift */,
+				9B70289829168B9400A51B91 /* ItachiView.swift */,
+				9BA1B4802918FB8E0039529F /* GreetingView.swift */,
+				9B7028B62917CF7100A51B91 /* AnimatedBackground.swift */,
 				9B7028802915467200A51B91 /* Assets.xcassets */,
 				9B7028822915467200A51B91 /* Preview Content */,
 			);
@@ -137,7 +155,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B70287F2915466E00A51B91 /* ContentView.swift in Sources */,
+				9B7028952915494800A51B91 /* MainView.swift in Sources */,
+				9B7028B72917CF7100A51B91 /* AnimatedBackground.swift in Sources */,
+				9B7028972916827500A51B91 /* secondSharinganView.swift in Sources */,
+				9B70289929168B9400A51B91 /* ItachiView.swift in Sources */,
+				9B70287F2915466E00A51B91 /* StarterView.swift in Sources */,
+				9BA1B4812918FB8E0039529F /* GreetingView.swift in Sources */,
+				9B7028912915492000A51B91 /* SharinganView.swift in Sources */,
 				9B70287D2915466E00A51B91 /* AnimationSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
