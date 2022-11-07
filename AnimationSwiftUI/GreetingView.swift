@@ -34,7 +34,7 @@ struct GreetingView: View {
                 }
             }
             .onAppear {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
                     self.isActive = true
                 }
             }

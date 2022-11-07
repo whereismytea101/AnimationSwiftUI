@@ -14,8 +14,8 @@ struct MainView: View {
     var body: some View {
         
         ZStack {
-//            AnimatedBackground()
-//            .ignoresSafeArea()
+            AnimatedBackground()
+            .ignoresSafeArea()
             VStack {
                 Button(action: buttonAction) {
                     HStack {

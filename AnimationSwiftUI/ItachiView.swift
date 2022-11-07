@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ItachiView: View {
     var body: some View {
+        
         Image("itachi")
             .resizable()
     }

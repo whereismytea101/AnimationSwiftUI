@@ -9,10 +9,6 @@ import SwiftUI
 
 struct StarterView: View {
     
-    @State private var isActive = false
-    @State private var size = 0.8
-    @State private var opacity = 0.5
-    
     var body: some View {
         TabView {
             MainView()
@@ -31,11 +27,6 @@ struct StarterView: View {
                 .tabItem {
                     Image(systemName: "eye")
                     Text("Awards")
-                }
-            ItachiView()
-                .tabItem {
-                    Image(systemName: "cloud")
-                    Text("Ninja")
                 }
         }
         .padding()
