@@ -19,10 +19,6 @@ struct secondSharinganView: View {
             Circle()
                 .foregroundColor(.black)
                 .frame(width: 50, height: 50)
-            Circle()
-                .frame(width: 100, height: 100)
-                .foregroundColor(.gray)
-                .overlay(Circle().stroke(Color.white, lineWidth: 6))
         }
     }
 }

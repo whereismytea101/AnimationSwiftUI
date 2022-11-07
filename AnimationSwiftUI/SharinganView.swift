@@ -14,6 +14,7 @@ struct SharinganView: View {
     
     var body: some View {
         ZStack {
+ //           Button(action: <#T##() -> Void#>, label: <#T##() -> Label#>)
             Circle()
                 .frame(width: 215)
                 .opacity(0.1)

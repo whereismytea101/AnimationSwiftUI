@@ -15,7 +15,7 @@ struct MainView: View {
         
         ZStack {
             AnimatedBackground()
-            .ignoresSafeArea()
+                .ignoresSafeArea()
             VStack {
                 Button(action: buttonAction) {
                     HStack {
